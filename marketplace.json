@@ -3,65 +3,9 @@
     "version": 1,
     "modules": [
         {
-            "id": "sherpaonnx.streaming-zipformer-multi-zh-hans",
-            "type": "sherpaonnx_model",
-            "name": "中文模型",
-            "author": "N/A",
-            "publisher": "jxlpzqc",
-            "desc": "中文 Zipformer-tranducer 模型",
-            "version": 20231212,
-            "displayVersion": "2023-12-12",
-            "install": [
-                {
-                    "type": "download",
-                    "url": "https://github.com/k2-fsa/sherpa-onnx/releases/download/asr-models/sherpa-onnx-streaming-zipformer-multi-zh-hans-2023-12-12.tar.bz2"
-                },
-                {
-                    "type": "extract"
-                },
-                {
-                    "type": "write_module_json"
-                }
-            ],
-            "sherpaonnx": {
-                "token": "sherpa-onnx-streaming-zipformer-multi-zh-hans-2023-12-12/tokens.txt",
-                "encoder": "sherpa-onnx-streaming-zipformer-multi-zh-hans-2023-12-12/encoder-epoch-20-avg-1-chunk-16-left-128.onnx",
-                "decoder": "sherpa-onnx-streaming-zipformer-multi-zh-hans-2023-12-12/decoder-epoch-20-avg-1-chunk-16-left-128.onnx",
-                "joiner": "sherpa-onnx-streaming-zipformer-multi-zh-hans-2023-12-12/joiner-epoch-20-avg-1-chunk-16-left-128.onnx"
-            }
-        },
-        {
-            "id": "csukuangfj.streaming-zipformer-en",
-            "type": "sherpaonnx_model",
-            "name": "英文模型",
-            "author": "csukuangfj",
-            "publisher": "jxlpzqc",
-            "desc": "英文流式 Zipformer-tranducer 模型",
-            "version": 20230626,
-            "displayVersion": "2023-06-26",
-            "install": [
-                {
-                    "type": "download",
-                    "url": "https://github.com/k2-fsa/sherpa-onnx/releases/download/asr-models/sherpa-onnx-streaming-zipformer-en-2023-06-26.tar.bz2"
-                },
-                {
-                    "type": "extract"
-                },
-                {
-                    "type": "write_module_json"
-                }
-            ],
-            "sherpaonnx": {
-                "token": "sherpa-onnx-streaming-zipformer-en-2023-06-26/tokens.txt",
-                "encoder": "sherpa-onnx-streaming-zipformer-en-2023-06-26/encoder-epoch-99-avg-1-chunk-16-left-128.onnx",
-                "decoder": "sherpa-onnx-streaming-zipformer-en-2023-06-26/decoder-epoch-99-avg-1-chunk-16-left-128.onnx",
-                "joiner": "sherpa-onnx-streaming-zipformer-en-2023-06-26/joiner-epoch-99-avg-1-chunk-16-left-128.onnx"
-            }
-        },
-        {
             "id": "csukuangfj.streaming-zipformer-bilingual-zh-en",
             "type": "sherpaonnx_model",
-            "name": "中英双语模型",
+            "name": "语音识别一阶段中英双语模型",
             "author": "csukuangfj",
             "publisher": "jxlpzqc",
             "desc": "中英双语流式 Zipformer-tranducer 模型",
@@ -87,18 +31,18 @@
             }
         },
         {
-            "id": "sherpaonnx.streaming-zipformer-korean",
+            "id": "punct-ct-transformer-zh-en",
             "type": "sherpaonnx_model",
-            "name": "한국어모델",
-            "author": "N/A",
-            "publisher": "jxlpzqc",
-            "desc": "한국어 Zipformer-tranducer 모델",
-            "version": 20240616,
-            "displayVersion": "2024-06-16",
+            "name": "标点模型",
+            "author": "sherpa-onnx",
+            "publisher": "",
+            "desc": "标点模型",
+            "version": 20240412,
+            "displayVersion": "2024-04-12",
             "install": [
                 {
                     "type": "download",
-                    "url": "https://github.com/k2-fsa/sherpa-onnx/releases/download/asr-models/sherpa-onnx-streaming-zipformer-korean-2024-06-16.tar.bz2"
+                    "url": "https://github.com/k2-fsa/sherpa-onnx/releases/download/punctuation-models/sherpa-onnx-punct-ct-transformer-zh-en-vocab272727-2024-04-12-int8.tar.bz2"
                 },
                 {
                     "type": "extract"
@@ -108,25 +52,22 @@
                 }
             ],
             "sherpaonnx": {
-                "token": "sherpa-onnx-streaming-zipformer-korean-2024-06-16/tokens.txt",
-                "encoder": "sherpa-onnx-streaming-zipformer-korean-2024-06-16/encoder-epoch-99-avg-1.onnx",
-                "decoder": "sherpa-onnx-streaming-zipformer-korean-2024-06-16/decoder-epoch-99-avg-1.onnx",
-                "joiner": "sherpa-onnx-streaming-zipformer-korean-2024-06-16/joiner-epoch-99-avg-1.onnx"
+                "model": "sherpa-onnx-punct-ct-transformer-zh-en-vocab272727-2024-04-12-int8/model.int8.onnx"     
             }
         },
         {
-            "id": "shaojieli.streaming-zipformer-fr",
+            "id": "sense-voice-zh-en-ja-ko-yue",
             "type": "sherpaonnx_model",
-            "name": "Modèle français",
-            "author": "shaojieli",
+            "name": "语音识别二阶段中英双语模型",
+            "author": "sherpa-onnx",
             "publisher": "jxlpzqc",
-            "desc": "Modèle Zipformer-tranducer français",
-            "version": 20230414,
-            "displayVersion": "2023-04-14",
+            "desc": "中英双语SenseVoice模型",
+            "version": 20240717,
+            "displayVersion": "2024-07-17",
             "install": [
                 {
                     "type": "download",
-                    "url": "https://github.com/k2-fsa/sherpa-onnx/releases/download/asr-models/sherpa-onnx-streaming-zipformer-fr-2023-04-14.tar.bz2"
+                    "url": "https://github.com/k2-fsa/sherpa-onnx/releases/download/asr-models/sherpa-onnx-sense-voice-zh-en-ja-ko-yue-int8-2024-07-17.tar.bz2"
                 },
                 {
                     "type": "extract"
@@ -136,11 +77,60 @@
                 }
             ],
             "sherpaonnx": {
-                "token": "sherpa-onnx-streaming-zipformer-fr-2023-04-14/tokens.txt",
-                "encoder": "sherpa-onnx-streaming-zipformer-fr-2023-04-14/encoder-epoch-29-avg-9-with-averaged-model.onnx",
-                "decoder": "sherpa-onnx-streaming-zipformer-fr-2023-04-14/decoder-epoch-29-avg-9-with-averaged-model.onnx",
-                "joiner": "sherpa-onnx-streaming-zipformer-fr-2023-04-14/joiner-epoch-29-avg-9-with-averaged-model.onnx"
+                "token": "sherpa-onnx-sense-voice-zh-en-ja-ko-yue-int8-2024-07-17/tokens.txt",
+                "model": "sherpa-onnx-sense-voice-zh-en-ja-ko-yue-int8-2024-07-17/model.int8.onnx"     
             }
-        }
+        },
+        {
+            "id": "silero_vad",
+            "type": "sherpaonnx_model",
+            "name": "VAD模型",
+            "author": "sherpa-onnx",
+            "publisher": "",
+            "desc": "VAD模型",
+            "version": 20250711,
+            "displayVersion": "2025-07-11",
+            "install": [
+                {
+                    "type": "download",
+                    "url": "https://github.com/k2-fsa/sherpa-onnx/releases/download/asr-models/silero_vad.int8.onnx"
+                },
+                {
+                    "type": "extract"
+                },
+                {
+                    "type": "write_module_json"
+                }
+            ],
+            "sherpaonnx": {
+                "model": "silero_vad.int8.onnx"     
+            }
+        },
+        {
+            "id": "llm",
+            "type": "openvino_model",
+            "name": "翻译大语言模型",
+            "author": "",
+            "publisher": "",
+            "desc": "大语言模型",
+            "version": 2025,
+            "displayVersion": "2025",
+            "install": [
+                {
+                    "type": "download",
+                    "url": "https://modelscope.cn/models/OpenVINO/Qwen3-4B-int4-ov/files"
+                },
+                {
+                    "type": "extract"
+                },
+                {
+                    "type": "write_module_json"
+                }
+            ],
+            "sherpaonnx": {
+                "model": ""     
+            }
+        },
+        
     ]
 }
