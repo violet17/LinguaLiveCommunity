@@ -35,7 +35,7 @@
             "type": "sherpaonnx_model",
             "name": "标点模型",
             "author": "sherpa-onnx",
-            "publisher": "",
+            "publisher": "sherpa-onnx",
             "desc": "标点模型",
             "version": 20240412,
             "displayVersion": "2024-04-12",
@@ -86,7 +86,7 @@
             "type": "sherpaonnx_model",
             "name": "VAD模型",
             "author": "sherpa-onnx",
-            "publisher": "",
+            "publisher": "sherpa-onnx",
             "desc": "VAD模型",
             "version": 20250711,
             "displayVersion": "2025-07-11",
@@ -110,8 +110,8 @@
             "id": "llm",
             "type": "openvino_model",
             "name": "翻译大语言模型",
-            "author": "",
-            "publisher": "",
+            "author": "ov",
+            "publisher": "ov",
             "desc": "大语言模型",
             "version": 2025,
             "displayVersion": "2025",
@@ -128,7 +128,7 @@
                 }
             ],
             "sherpaonnx": {
-                "model": ""     
+                "model": "openvino_model.bin"     
             }
         } 
     ]
