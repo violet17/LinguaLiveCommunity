@@ -96,9 +96,6 @@
                     "url": "https://github.com/k2-fsa/sherpa-onnx/releases/download/asr-models/silero_vad.int8.onnx"
                 },
                 {
-                    "type": "extract"
-                },
-                {
                     "type": "write_module_json"
                 }
             ],
@@ -109,16 +106,16 @@
         {
             "id": "llm",
             "type": "openvino_model",
-            "name": "翻译大语言模型",
+            "name": "翻译大语言模型(CPU/GPU)",
             "author": "ov",
             "publisher": "ov",
-            "desc": "大语言模型",
+            "desc": "大语言模型(CPU/GPU)",
             "version": 2025,
             "displayVersion": "2025",
             "install": [
                 {
                     "type": "download",
-                    "url": "https://modelscope.cn/models/OpenVINO/Qwen3-4B-int4-ov/files"
+                    "url": "https://modelscope.cn/models/Crystal2020/translation/resolve/master/Qwen3-4B-Instruct-2507-int4-ov.zip"
                 },
                 {
                     "type": "extract"
@@ -128,7 +125,32 @@
                 }
             ],
             "sherpaonnx": {
-                "model": "openvino_model.bin"     
+                "model": "Qwen3-4B-Instruct-2507-int4-ov"     
+            }
+        },
+        {
+            "id": "llm",
+            "type": "openvino_model",
+            "name": "翻译大语言模型(NPU)",
+            "author": "ov",
+            "publisher": "ov",
+            "desc": "大语言模型(NPU)",
+            "version": 2025,
+            "displayVersion": "2025",
+            "install": [
+                {
+                    "type": "download",
+                    "url": "https://modelscope.cn/models/Crystal2020/translation/resolve/master/Qwen3-4B-Instruct-2507-int4-cw-npu-ov.zip"
+                },
+                {
+                    "type": "extract"
+                },
+                {
+                    "type": "write_module_json"
+                }
+            ],
+            "sherpaonnx": {
+                "model": "Qwen3-4B-Instruct-2507-int4-cw-npu-ov"     
             }
         } 
     ]
