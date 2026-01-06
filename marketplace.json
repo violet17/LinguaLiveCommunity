@@ -104,7 +104,7 @@
             }
         },
         {
-            "id": "llm",
+            "id": "llm-cpu-gpu",
             "type": "openvino_model",
             "name": "翻译大语言模型(CPU/GPU)",
             "author": "ov",
@@ -129,7 +129,7 @@
             }
         },
         {
-            "id": "llm",
+            "id": "llm-npu",
             "type": "openvino_model",
             "name": "翻译大语言模型(NPU)",
             "author": "ov",
