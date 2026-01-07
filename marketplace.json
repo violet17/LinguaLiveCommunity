@@ -96,6 +96,9 @@
                     "url": "https://github.com/k2-fsa/sherpa-onnx/releases/download/asr-models/silero_vad.int8.onnx"
                 },
                 {
+                    "type": "extract"
+                },
+                {
                     "type": "write_module_json"
                 }
             ],
