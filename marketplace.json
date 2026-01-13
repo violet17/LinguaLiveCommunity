@@ -3,7 +3,7 @@
     "version": 1,
     "modules": [
         {
-            "id": "csukuangfj.streaming-zipformer-bilingual-zh-en",
+            "id": "online_asr",
             "type": "sherpaonnx_model",
             "name": "语音识别一阶段中英双语模型",
             "author": "csukuangfj",
@@ -31,7 +31,7 @@
             }
         },
         {
-            "id": "punct-ct-transformer-zh-en",
+            "id": "punct",
             "type": "sherpaonnx_model",
             "name": "标点模型",
             "author": "sherpa-onnx",
@@ -56,7 +56,7 @@
             }
         },
         {
-            "id": "sense-voice-zh-en-ja-ko-yue",
+            "id": "offline_asr",
             "type": "sherpaonnx_model",
             "name": "语音识别二阶段中英双语模型",
             "author": "sherpa-onnx",
@@ -82,7 +82,7 @@
             }
         },
         {
-            "id": "silero_vad",
+            "id": "vad",
             "type": "sherpaonnx_model",
             "name": "VAD模型",
             "author": "sherpa-onnx",
@@ -107,7 +107,7 @@
             }
         },
         {
-            "id": "llm-cpu-gpu",
+            "id": "llm_cpu_gpu",
             "type": "openvino_model",
             "name": "翻译大语言模型(CPU/GPU)",
             "author": "ov",
@@ -132,7 +132,7 @@
             }
         },
         {
-            "id": "llm-npu",
+            "id": "llm_npu",
             "type": "openvino_model",
             "name": "翻译大语言模型(NPU)",
             "author": "ov",
