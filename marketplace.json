@@ -118,7 +118,7 @@
             "install": [
                 {
                     "type": "download",
-                    "url": "https://modelscope.cn/models/Crystal2020/translation/resolve/master/Qwen3-4B-Instruct-2507-int4-ov.zip"
+                    "url": "https://modelscope.cn/models/Crystal2020/translation/resolve/master/HY-MT1.5-1.8B-int4-ov.zip"
                 },
                 {
                     "type": "extract"
@@ -143,7 +143,7 @@
             "install": [
                 {
                     "type": "download",
-                    "url": "https://modelscope.cn/models/Crystal2020/translation/resolve/master/Qwen3-4B-Instruct-2507-int4-ov.zip"
+                    "url": "https://modelscope.cn/models/Crystal2020/translation/resolve/master/HY-MT1.5-1.8B-int4-cw-npu-ov.zip"
                 },
                 {
                     "type": "extract"
